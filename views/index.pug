@@ -1,0 +1,57 @@
+//- index.pug
+doctype html
+html
+    head
+        title Harry Dance Academy
+        style
+            include ../static/style.css
+    body
+        nav#navbar
+            ul          
+                 div#logo 
+                     img(src="/static/img/logo.png")
+                     |HDA
+                 li #[a(href="/") Home]
+                 li #[a(href="/") About]
+                 li #[a(href="/") Services]
+                 li #[a(href="/") Class info]
+                 li #[a(href="/") Contact Us]
+
+        section#introsection 
+              div Welcome to Harry's Dance Academy 
+              div.small Eat Sleep Dance Repeat
+
+        section#missionsection           
+               h2 Our Mission
+               div.card
+                    h3 Dance Perfection
+                    div.card-box 
+                         div.card-img
+                              img(src="/static/img/1.png")
+                         p This is the Best Dance Academy of this Universe.
+               div.card
+                    h3 Dance the way you like
+                    div.card-box 
+                         div.card-img
+                              img(src="/static/img/2.png")
+                         p This is the Best Dance Academy of this Universe.
+               div.card
+                    h3 Expert Teaching
+                    div.card-box 
+                         div.card-img
+                              img(src="/static/img/3.png")
+                         p This is the Best Dance Academy of this Universe.
+
+        section#sponsersection 
+             h2 Our sponser
+             div#sponsers 
+               img(src="/static/img/logo1.png", alt="Sponser Image",class="spImage")
+               img(src="/static/img/logo2.png", alt="Sponser Image",class="spImage")
+               img(src="/static/img/logo3.png", alt="Sponser Image",class="spImage")
+               img(src="/static/img/logo4.png", alt="Sponser Image",class="spImage")
+
+        footer#footer 
+              |Copyright © 2021 HarryDanceAcademy.com | All Rights Reserved
+
+        script
+        include ../static/index.js
